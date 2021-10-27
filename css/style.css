@@ -1,0 +1,214 @@
+
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background: url("../images/concrete_seamless.png") #f1f1f1;
+}
+
+header{
+
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+
+}
+
+@keyframes logo_change{
+    from {width:50px;}
+    to {width: 425px; }
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#logo{
+    animation-name: logo_change;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+a:link {
+    color: blue;
+}
+
+  /* visited link */
+a:visited {
+    color: blue;
+}
+
+div.card header{
+    background: #288088;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+
+}
+
+div.card_big header {
+    background: #288088;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;  
+    
+}
+
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+.skip a:focus{
+    position: absolute;
+    top: 0px;
+}
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    flex-basis: 450px;
+}
+
+.card_big{
+    flex-basis: 450px;
+}
+
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+#image1 {
+border-style: solid;
+border-color: #50C7C7;
+margin: 10px 10px 10px 10px;
+width: 300px;
+border-width: 10px;
+}
+
+#image2 {
+border-style: solid;
+border-color: #50C7C7;
+margin: 10px 10px 10px 10px;
+width: 300px;
+border-width: 10px;
+}
+
+#image3 {
+border-style: solid;
+border-color: #50C7C7;
+margin: 10px 10px 10px 10px;
+width: 300px;
+border-width: 10px;
+}
+
+#image4 {
+border-style: solid;
+border-color: #50C7C7;
+margin: 10px 10px 10px 10px;
+width: 300px;
+border-width: 10px;
+}
+
+#image5 {
+border-style: solid;
+border-color: #50C7C7;
+border-width: 10px;
+margin: 10px 10px 10px 10px;
+width: 300px;
+}
+
+@media screen and (min-width: 850px){
+
+body header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    
+}
+
+
+
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+}   
+.card{
+    flex-basis: 250px;
+}    
+.card_big{
+    flex-basis: 250px;
+}
+
+div.card header{
+    position: static;
+}
+}
+
+@media print {
+
+    .gallery, #gallery{
+        display:none;
+    }
+    body{
+        background: #f1f1f1;}
+    
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
+    }
+    .pricing {
+        display: flex;
+        align-self: flex-end;
+        justify-content: baseline;
+        flex-wrap: nowrap;
+    
+    }
+    .card{
+        display: flex;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #45ADDD;
+        flex-basis: 250px;
+    }
+    .card_big{
+        display: flex;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #45ADDD;
+        flex-basis: 250px;
+    }
+
+    }
